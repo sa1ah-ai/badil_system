@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "El Messiri", "Jost", sans-serif;
+  background-image: url(../images/l2.png);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 20px;
+  backdrop-filter: blur(3px);
+  min-height: 100vh;
+  margin-bottom: 2%;
+}
+
+.olay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  background-color: rgb(0 0 0 / 40%);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.olay .main {
+  backdrop-filter: brightness(0);
+  /* box-shadow: -5px -20px 50px #000000; */
+  border-radius: 60% / 10%;
+  /* margin-top: 10%; */
+  width: auto;
+  text-decoration: none;
+  color: #f1f1f1;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.olay-content {
+  box-shadow: inset -3px -20px 20px 0px #060505;
+  border-radius: 12px;
+  position: relative;
+  /* top: 10%; */
+  width: 50%;
+  text-align: center;
+  margin-top: 30px;
+  /* text-align: center; */
+  align-items: center;
+}
+
+.m_width {
+  width: 100%;
+  text-align: -webkit-center;
+  z-index: 1;
+}
+
+.main {
+  z-index: 1;
+  width: 350px;
+  /* height: fit-content; */
+  overflow: hidden;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 5px 20px 50px #000;
+}
+
+.message {
+  text-align: center;
+  padding: 1%;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  /* display: grid; */
+  box-shadow: 5px 20px 50px #f5ecec;
+  border-radius: 60% / 10%;
+  /* transform: translateY(-15px); */
+  /* transition: 0.8s ease-in-out; */
+}
+
+div.crimeInfoForJudje {
+  display: inline-flex;
+  align-content: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.messageTitle {
+  /* align-self: flex-start; */
+  /* top: 0; */
+  width: 100%;
+  background-color: #f77440;
+  right: 0;
+  font-size: 20px;
+  /* visibility: hidden; */
+}
+
+.messageContent h5 {
+  padding: 0px 5px;
+}
+
+.main2 {
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+}
+
+#chk {
+  display: none;
+}
+
+.caseInfo {
+  /* padding: 5%; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 10px 60px #fff8f8;
+  border-radius: 60% / 10%;
+  /* transform: translateY(-15px); */
+  transition: 0.8s ease-in-out;
+}
+
+div.qus_input {
+  margin-bottom: 8%;
+}
+
+.form_title {
+  text-align: -webkit-center;
+  color: white;
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: 5px 10px 60px #050505;
+  backdrop-filter: blur(3px);
+}
+
+.form_title h5 {
+  font-size: 25px;
+  background-color: #3e251a;
+  /* width: fit-content; */
+  border-radius: 5px;
+  box-shadow: 5px 10px 60px #050505;
+  font-weight: bold;
+}
+
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
+}
+
+h1 {
+  text-align: center;
+}
+
+#progress-bar {
+  width: 0;
+  height: 10px;
+  background-color: #f3cfc1;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.question {
+  text-align: center;
+
+  padding: 2%;
+}
+
+form#question-form {
+  text-align: right;
+  direction: rtl;
+}
+.answers {
+  display: inline-block;
+}
+
+input[type="radio"] {
+  font-size: 20px;
+  color: rgb(182, 159, 159);
+}
+
+.hide {
+  display: none;
+}
+
+.caseInfo h3 {
+  margin-top: 10px;
+  color: #e0dede;
+}
+
+div.main {
+  backdrop-filter: brightness(0.1);
+}
+
+div.btns {
+  margin-top: 5%;
+  display: flex;
+}
+
+input#crime_details {
+  padding-bottom: 25%;
+  width: 500px;
+  height: 180px;
+  font-size: 15px;
+}
+
+label {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+input {
+  width: 28%;
+  height: 40px;
+  background: #e0dede;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 17px;
+  font-family: "El Messiri", sans-serif;
+  color: #833129;
+  font-weight: bold;
+}
+
+button {
+  width: 30%;
+  height: 40px;
+  margin: 10px auto;
+  display: block;
+  background-color: #6c2001;
+  color: #fefdfc;
+  border: 1px solid #833129;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #db8585;
+}
+
+.date_qus_input {
+  padding-right: 10%;
+}
+
+div.answerForJugde {
+  width: 60%;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.crimeInfoForJudje span {
+  font-size: small;
+  padding-right: 7%;
+  direction: rtl;
+}
+
+/* ************************************************************* */
+
+.dropdown {
+  position: relative;
+  direction: ltr;
+  text-align: center;
+  display: inline-block;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  width: 100px;
+  font-size: small;
+  border: 1px solid #833129;
+  border-radius: 20px 1px;
+  background-color: #f9f9f9;
+  list-style-type: none;
+  padding: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-list_4 {
+  display: none;
+  position: absolute;
+  width: 120px;
+  font-size: small;
+  border: 1px solid #833129;
+  border-radius: 20px 1px;
+  background-color: #f9f9f9;
+  list-style-type: none;
+  padding: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  height: 170px;
+  overflow-y: scroll;
+}
+
+.dropdown-list_5 {
+  display: none;
+  position: absolute;
+  width: 120px;
+  font-size: small;
+  border: 1px solid #833129;
+  border-radius: 20px 1px;
+  background-color: #f9f9f9;
+  list-style-type: none;
+  padding: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  height: 170px;
+  overflow-y: scroll;
+}
+
+.dropdown-option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #ddd;
+  border-radius: 30px;
+  color: #833129;
+}
+
+hr {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border: 0;
+
+  border-top: 1px solid rgb(78 41 41 / 58%);
+  width: 80px;
+}
+
+#warning {
+  color: white;
+  font-size: 10px;
+  /* font-weight: bold; */
+  position: absolute;
+  left: 8%;
+  margin-top: 6%;
+}
+
+#warning > i {
+  padding: 5px;
+}
+
+#chooseCat {
+  /* display: none; */
+  position: fixed;
+  top: 10%;
+  color: #ddd;
+  text-align: center;
+  width: 80%;
+  font-weight: bold;
+  transform: translateX(10%);
+  background-color: #eb2020;
+  padding: 10px;
+  border: 1px solid #eb2020;
+  border-radius: 5px;
+  transition: top 1s ease-in-out;
+  z-index: 9999;
+}
+
+.case_detalis_answer {
+  color: #0afed7;
+  display: contents;
+}
+.details_btns {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  /* align-content: center; */
+  justify-content: center;
+}
