@@ -112,15 +112,38 @@ cd badil_system
 
 ## Screenshots
 
-<!--
-Add screenshots here to illustrate the main features and interfaces:
+Below are sample screenshots showcasing key interfaces of the Badil System. All images are stored in the `sys_screenshots` folder. Thumbnails are displayed here for quick reference:
 
-- Login Page
-- Citizen Complaint Submission
-- Judge Case Review Dashboard
-- Executive Authority Panel
-- Real-time Analytics Dashboard
--->
+<p float="left">
+  <img src="sys_screenshots/login.png" alt="Login" width="170" />
+  <img src="sys_screenshots/create_account.png" alt="Create Account" width="170" />
+  <img src="sys_screenshots/profile.png" alt="Profile" width="170" />
+  <img src="sys_screenshots/case_filing_questionnaire.png" alt="Case Filing Questionnaire" width="170" />
+  <img src="sys_screenshots/upload_case_page.png" alt="Upload Case Page" width="170" />
+</p>
+
+<p float="left">
+  <img src="sys_screenshots/text_of_crime_detalis.png" alt="Text of Crime Details" width="170" />
+  <img src="sys_screenshots/case_details.png" alt="Case Details" width="170" />
+  <img src="sys_screenshots/crime_details_Judge.png" alt="Crime Details (Judge)" width="170" />
+  <img src="sys_screenshots/change_password.png" alt="Change Password" width="170" />
+</p>
+
+### Image Descriptions
+
+| Screenshot                     | File Name                       | Description                                           |
+| ------------------------------ | ------------------------------- | ----------------------------------------------------- |
+| **Login**                      | login.png                       | User authentication page                              |
+| **Create Account**             | create\_account.png             | Registration form for new users                       |
+| **Profile**                    | profile.png                     | User profile with personal/case statistics            |
+| **Case Filing Questionnaire**  | case\_filing\_questionnaire.png | Initial complaint/case submission form                |
+| **Upload Case Page**           | upload\_case\_page.png          | Interface for filing/uploading a new case             |
+| **Text of Crime Details**      | text\_of\_crime\_detalis.png    | Input for narrative details of the crime              |
+| **Case Details**               | case\_details.png               | Case data and decision workflow                       |
+| **Crime Details (Judge View)** | crime\_details\_Judge.png       | In-depth view for judges, including decision/approval |
+| **Change Password**            | change\_password.png            | User password reset form                              |
+
+For the complete user experience, see all files in the `sys_screenshots` folder. Images can be expanded for detail when viewed in your code hosting platform.
 
 ---
 
